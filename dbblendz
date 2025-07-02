@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>dbblendz Barber Booking</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; line-height: 1.5; color: #222; background: #f8f8f8; }
+    header { background: #000; color: #fff; text-align: center; padding: 2rem 1rem; }
+    header img { max-width: 150px; margin-bottom: 1rem; }
+    header h1 { font-size: 2rem; }
+    section { padding: 2rem 1rem; max-width: 800px; margin: 0 auto; }
+    .services ul { list-style: none; }
+    .services li { margin: .5rem 0; }
+    .booking { text-align: center; }
+    .contact { text-align: center; margin-top: 2rem; }
+    a.button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: .75rem 1.5rem;
+      background: #000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    @media (min-width: 600px) {
+      header h1 { font-size: 2.5rem; }
+      .services li { font-size: 1.1rem; }
+    }
+  </style>
+  <!-- Calendly widget CSS -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="dbblendz logo">
+    <h1>dbblendz</h1>
+    <p>West Melbourne • $10 cuts • $5 add-ons</p>
+  </header>
+
+  <section class="services">
+    <h2>Services &amp; Pricing</h2>
+    <ul>
+      <li>Fade &amp; Haircut — <strong>$10</strong></li>
+      <li>Add-ons — <strong>$5</strong>
+        <ul>
+          <li>Eyebrow slits</li>
+          <li>Line-up detail</li>
+          <li>Razor finish</li>
+          <li>Custom part/shaping</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section class="booking">
+    <h2>Book Your Slot</h2>
+    <!-- Calendly inline widget -->
+    <div class="calendly-inline-widget" 
+         data-url="https://calendly.com/YOUR_CALENDLY_LINK" 
+         style="min-width:320px;height:630px;"></div>
+    <!-- Calendly widget JS -->
+    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  </section>
+
+  <section class="contact">
+    <h2>Contact &amp; Follow</h2>
+    <p>Instagram: <a href="https://instagram.com/dbblendz" target="_blank">@dbblendz</a></p>
+    <p>Hours:</p>
+    <p>
+      Mon, Thu, Fri &amp; Sun: 4–7 PM<br>
+      Wed: 11 AM–6 PM<br>
+      Sat: 10 AM–4 PM<br>
+      Tue: Closed
+    </p>
+  </section>
+
+</body>
+</html>
